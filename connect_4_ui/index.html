@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Connect 4</title>
+    <style>
+      .new_game {
+          box-shadow:inset 0px 1px 0px 0px #fff6af;
+          background:linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
+          background-color:#ffec64;
+          border-radius:6px;
+          border:1px solid #ffaa22;
+          display:inline-block;
+          cursor:pointer;
+          color:#333333;
+          font-family:Arial;
+          font-size:15px;
+          font-weight:bold;
+          padding:6px 24px;
+          text-decoration:none;
+          text-shadow:0px 1px 0px #ffee66;
+      }
+      .new_game:hover {
+          background:linear-gradient(to bottom, #ffab23 5%, #ffec64 100%);
+          background-color:#ffab23;
+      }
+      .new_game:active {
+          position:relative;
+          top:1px;
+      }
+      .new_game_label {
+          font-family:Arial;
+          font-size:15px;
+          font-weight:bold;
+          padding:6px 24px;
+          text-decoration:none;
+      }
+    </style>
+  </head>
+  <body>
+
+    <label class="new_game_label" for="player">Choose player:</label>
+    <select class="new_game" name="player" id="player">
+      <option value="1">1</option>
+      <option value="2">2</option>
+    </select>
+    <button class="new_game" onclick="newGame()">New game</button>
+    <script src="p5.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
